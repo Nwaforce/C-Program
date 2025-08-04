@@ -17,8 +17,8 @@ class Program
         Console.Write("Confirm Password: ");
         string ConfirmPassword = Console.ReadLine()!;
 
-        Console.WriteLine(Password);
-        Console.WriteLine(ConfirmPassword);
+        // Console.WriteLine(Password);
+        // Console.WriteLine(ConfirmPassword);
 
         if (!Password.Equals(string.Empty) && !ConfirmPassword.Equals(string.Empty))
         {
