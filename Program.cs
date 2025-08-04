@@ -22,7 +22,8 @@ class Program
 
         if (!Password.Equals(string.Empty) && !ConfirmPassword.Equals(string.Empty))
         {
-            if (Password == ConfirmPassword)
+            //i can write the next line using == instead of .Equals
+            if (Password.Equals(ConfirmPassword))
             {
                 Console.WriteLine("Password Match");
             }
