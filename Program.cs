@@ -20,22 +20,30 @@ class Program
         // Console.WriteLine(Password);
         // Console.WriteLine(ConfirmPassword);
 
-        if (!Password.Equals(string.Empty) && !ConfirmPassword.Equals(string.Empty))
+        if (!Password.Equals(string.Empty))
         {
-            //i can write the next line using == instead of .Equals
-            if (Password.Equals(ConfirmPassword))
+            if (!ConfirmPassword.Equals(string.Empty))
             {
-                Console.WriteLine("Password Match");
+                //i can write the next line using == instead of .Equals
+                if (Password.Equals(ConfirmPassword))
+                {
+                    Console.WriteLine("Password Match");
+                }
+                else
+                {
+                    Console.WriteLine("Password Do not Match");
+                }
             }
-            else
-            {
-                Console.WriteLine("Password Do not Match");
-            }
+         else
+        {
+            Console.WriteLine("Please Enter Password Confirmation: ");
         }
-        else
+        }
+         else
         {
             Console.WriteLine("Please Enter Password: ");
         }
+       
 
         Console.ReadLine();
 
