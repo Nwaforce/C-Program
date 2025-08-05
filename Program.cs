@@ -2,56 +2,100 @@
 // Console.WriteLine("Hello World!");
 
 using System;
+using System.Security.Principal;
 
 
 class Program
 {
     static void Main(string[] args)
     {
+
+        // This for initailizing a variable
         // string name = "Aba";
         // int age = 30;
         // System.Console.WriteLine($"My name is {name} and i'm {age} years old");
-        Console.Write("Enter Password: ");
-        string Password = Console.ReadLine()!;
 
-        Console.Write("Confirm Password: ");
-        string ConfirmPassword = Console.ReadLine()!;
+        // //This for PasswordChecker and Validation 
+        // Console.Write("Enter Password: ");
+        // string Password = Console.ReadLine()!;
 
-        // Console.WriteLine(Password);
-        // Console.WriteLine(ConfirmPassword);
+        // Console.Write("Confirm Password: ");
+        // string ConfirmPassword = Console.ReadLine()!;
 
-        if (!Password.Equals(string.Empty))
+        // // Console.WriteLine(Password);
+        // // Console.WriteLine(ConfirmPassword);
+
+        // if (!Password.Equals(string.Empty))
+        // {
+        //     if (!ConfirmPassword.Equals(string.Empty)) {
+        //         if (Password.Length >= 6 && ConfirmPassword.Length >= 6)
+
+        //             {
+        //                 //i can write the next line using == instead of .Equals
+        //                 if (Password.Equals(ConfirmPassword))
+        //                 {
+        //                     Console.WriteLine("Password Match");
+        //                 }
+        //                 else
+        //                 {
+        //                     Console.WriteLine("Password Do not Match");
+        //                 }
+        //             }
+        //     else
+        //     {
+        //                 Console.WriteLine("Please Enter Atleast 6 Charaters");
+        //     } 
+        //     }
+
+        //         else
+        //         {
+        //             Console.WriteLine("Please Enter Password Confirmation: ");
+        //         }
+        // }
+        //  else
+        // {
+        //     Console.WriteLine("Please Enter Password: ");
+        // }
+
+        //Arrays
+
+        // int num1 = 5;
+        // int num2 = 10;
+        // int num3 = 15;
+        // int num4 = 30;
+
+        int[] numbers = new int[4];
+
+        // numbers[0] = 5;
+        // numbers[1] = 10;
+        // numbers[2] = 15;
+
+        // Console.Write("Enter a number: ");
+        // numbers[0] = Convert.ToInt32(Console.ReadLine());
+        //  Console.Write("Enter a number: ");
+        // numbers[1] = Convert.ToInt32(Console.ReadLine());
+        //  Console.Write("Enter a number: ");
+        // numbers[2] = Convert.ToInt32(Console.ReadLine());
+        //  Console.Write("Enter a number: ");
+        // numbers[3] = Convert.ToInt32(Console.ReadLine());
+
+
+        // Console.WriteLine($"{num1} {num2} {num3} {num4}");
+        // Console.WriteLine($"{numbers[0]} {numbers[1]} {numbers[2]} {numbers[3]}");
+        for (int i = 0; i < numbers.Length; i++)
         {
-            if (!ConfirmPassword.Equals(string.Empty)) {
-                if (Password.Length >= 6 && ConfirmPassword.Length >= 6)
-                
-                    {
-                        //i can write the next line using == instead of .Equals
-                        if (Password.Equals(ConfirmPassword))
-                        {
-                            Console.WriteLine("Password Match");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Password Do not Match");
-                        }
-                    }
-            else
-            {
-                        Console.WriteLine("Please Enter Atleast 6 Charaters");
-            } 
-            }
+            Console.Write("Enter a number: ");
+            numbers[i] = Convert.ToInt32(Console.ReadLine());
+        }
 
-                else
-                {
-                    Console.WriteLine("Please Enter Password Confirmation: ");
-                }
-        }
-         else
+
+
+        for (int i = 0; i < numbers.Length; i++)
         {
-            Console.WriteLine("Please Enter Password: ");
+            Console.Write($"{numbers[i]} ");
         }
-       
+        
+
 
         Console.ReadLine();
 
