@@ -82,6 +82,9 @@ class Program
 
         // Console.WriteLine($"{num1} {num2} {num3} {num4}");
         // Console.WriteLine($"{numbers[0]} {numbers[1]} {numbers[2]} {numbers[3]}");
+
+
+        //USING FOR LOOP
         for (int i = 0; i < numbers.Length; i++)
         {
             Console.Write("Enter a number: ");
@@ -93,6 +96,13 @@ class Program
         for (int i = 0; i < numbers.Length; i++)
         {
             Console.Write($"{numbers[i]} ");
+        }
+        Console.WriteLine();
+
+        //USING FOREACH 
+        foreach (int num in numbers)
+        {
+            Console.Write($"{num} ");
         }
         
 
