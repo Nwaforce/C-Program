@@ -22,22 +22,30 @@ class Program
 
         if (!Password.Equals(string.Empty))
         {
-            if (!ConfirmPassword.Equals(string.Empty))
+            if (!ConfirmPassword.Equals(string.Empty)) {
+                if (Password.Length >= 6 && ConfirmPassword.Length >= 6)
+                
+                    {
+                        //i can write the next line using == instead of .Equals
+                        if (Password.Equals(ConfirmPassword))
+                        {
+                            Console.WriteLine("Password Match");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Password Do not Match");
+                        }
+                    }
+            else
             {
-                //i can write the next line using == instead of .Equals
-                if (Password.Equals(ConfirmPassword))
-                {
-                    Console.WriteLine("Password Match");
-                }
+                        Console.WriteLine("Please Enter Atleast 6 Charaters");
+            } 
+            }
+
                 else
                 {
-                    Console.WriteLine("Password Do not Match");
+                    Console.WriteLine("Please Enter Password Confirmation: ");
                 }
-            }
-         else
-        {
-            Console.WriteLine("Please Enter Password Confirmation: ");
-        }
         }
          else
         {
