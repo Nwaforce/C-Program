@@ -4,7 +4,6 @@
 using System;
 using System.Security.Principal;
 
-
 class Program
 {
     static void Main(string[] args)
@@ -100,23 +99,23 @@ class Program
         //     Console.Write($"{num} ");
         // }
 
-        //SOLVING A PROBLEM WITH ARRAY 
+        //SOLVING A PROBLEM WITH ARRAY AND ALSO STORE THE VALUES WE GOT
 
-        const int angleCount = 3;
-        int[] angles = new int[angleCount];
+        // const int angleCount = 3;
+        // int[] angles = new int[angleCount];
 
-        for (int i = 0; i < angles.Length; i++)
-        {
-            Console.Write($"Enter angel {i + 1}: "); // FOR {I + 1} HELPS US INCREASE THE ANGELS NUMBER EACH WE ADD ANOTHER ANGEL 
-            angles[i] = Convert.ToInt32(Console.ReadLine());
-        }
+        // for (int i = 0; i < angles.Length; i++)
+        // {
+        //     Console.Write($"Enter angel {i + 1}: "); // FOR {I + 1} HELPS US INCREASE THE ANGELS NUMBER EACH WE ADD ANOTHER ANGEL 
+        //     angles[i] = Convert.ToInt32(Console.ReadLine());
+        // }
 
-        int angleSum = 0;
+        // int angleSum = 0;
 
-        foreach (int angle in angles)
-        {
-            angleSum += angle;
-        }
+        // foreach (int angle in angles)
+        // {
+        //     angleSum += angle;
+        // }
 
         // USING THIS IS ALSO LONGER 
 
@@ -141,7 +140,16 @@ class Program
         // {
         //     Console.WriteLine("Invalid");
         // }
+        //ANOTHER WAY TO SOLVE AND NOT STORING THE VALUES WE INPUT IS
+            const int angleCount = 3;
+             int angleSum = 0;
 
+        for (int i = 0; i < angleCount; i++)
+        {
+            Console.Write($"Enter angel {i + 1}: ");
+            angleSum += Convert.ToInt32(Console.ReadLine());
+        }
+        
         //USING A SIGNLE LINE TO ALSO SOLVE THE SAME PROBLEM FOR CLEARER CODE 
         Console.WriteLine(angleSum == 180 ? "Valid" : "Invalid");
 
