@@ -141,15 +141,15 @@ class Program
         //     Console.WriteLine("Invalid");
         // }
         //ANOTHER WAY TO SOLVE AND NOT STORING THE VALUES WE INPUT IS
-            const int angleCount = 3;
-             int angleSum = 0;
+        const int angleCount = 3;
+        int angleSum = 0;
 
         for (int i = 0; i < angleCount; i++)
         {
             Console.Write($"Enter angel {i + 1}: ");
             angleSum += Convert.ToInt32(Console.ReadLine());
         }
-        
+
         //USING A SIGNLE LINE TO ALSO SOLVE THE SAME PROBLEM FOR CLEARER CODE 
         Console.WriteLine(angleSum == 180 ? "Valid" : "Invalid");
 
