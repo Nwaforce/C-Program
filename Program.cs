@@ -104,9 +104,8 @@ class Program
         {
             Console.Write($"{num} ");
         }
+
         
-
-
         Console.ReadLine();
 
     }
