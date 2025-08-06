@@ -64,7 +64,7 @@ class Program
         // int num3 = 15;
         // int num4 = 30;
 
-        int[] numbers = new int[4];
+        // int[] numbers = new int[4];
 
         // numbers[0] = 5;
         // numbers[1] = 10;
@@ -85,27 +85,50 @@ class Program
 
 
         //USING FOR LOOP
-        for (int i = 0; i < numbers.Length; i++)
+        // for (int i = 0; i < numbers.Length; i++)
+        // {
+        //     Console.Write("Enter a number: ");
+        //     numbers[i] = Convert.ToInt32(Console.ReadLine());
+        // }
+
+
+
+        // for (int i = 0; i < numbers.Length; i++)
+        // {
+        //     Console.Write($"{numbers[i]} ");
+        // }
+        // Console.WriteLine();
+
+        // //USING FOREACH 
+        // foreach (int num in numbers)
+        // {
+        //     Console.Write($"{num} ");
+        // }
+
+        //SOLVING A PROBLEM WITH ARRAY 
+
+        Console.Write("Enter angle 1: ");
+        int angle1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter angle 2: ");
+        int angle2 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter angle 3: ");
+        int angle3 = Convert.ToInt32(Console.ReadLine());
+
+        int angleSum = angle1 + angle2 + angle3;
+
+        if (angleSum == 180)
         {
-            Console.Write("Enter a number: ");
-            numbers[i] = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Valid");
+        }
+        else
+        {
+            Console.WriteLine("Invalid");
         }
 
 
 
-        for (int i = 0; i < numbers.Length; i++)
-        {
-            Console.Write($"{numbers[i]} ");
-        }
-        Console.WriteLine();
-
-        //USING FOREACH 
-        foreach (int num in numbers)
-        {
-            Console.Write($"{num} ");
-        }
-
-        
         Console.ReadLine();
 
     }
