@@ -107,7 +107,7 @@ class Program
 
         for (int i = 0; i < angles.Length; i++)
         {
-            Console.Write($"Enter angel {i + 1}: ");
+            Console.Write($"Enter angel {i + 1}: "); // FOR {I + 1} HELPS US INCREASE THE ANGELS NUMBER EACH WE ADD ANOTHER ANGEL 
             angles[i] = Convert.ToInt32(Console.ReadLine());
         }
 
