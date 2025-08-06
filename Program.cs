@@ -118,14 +118,20 @@ class Program
 
         int angleSum = angle1 + angle2 + angle3;
 
-        if (angleSum == 180)
-        {
-            Console.WriteLine("Valid");
-        }
-        else
-        {
-            Console.WriteLine("Invalid");
-        }
+        //USIGN THE IF STATEMENT TO SOLVE
+
+        // if (angleSum == 180)
+        // {
+        //     Console.WriteLine("Valid");
+        // }
+        // else
+        // {
+        //     Console.WriteLine("Invalid");
+        // }
+
+
+        //USING A SIGNLE LINE TO ALSO SOLVE THE SAME PROBLEM FOR CLEARER CODE 
+        Console.WriteLine(angleSum == 180 ? "Valid" : "Invalid");
 
 
 
