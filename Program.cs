@@ -9,7 +9,6 @@ class Program
 {
     static void Main(string[] args)
     {
-
         // This for initailizing a variable
         // string name = "Aba";
         // int age = 30;
@@ -79,10 +78,8 @@ class Program
         //  Console.Write("Enter a number: ");
         // numbers[3] = Convert.ToInt32(Console.ReadLine());
 
-
         // Console.WriteLine($"{num1} {num2} {num3} {num4}");
         // Console.WriteLine($"{numbers[0]} {numbers[1]} {numbers[2]} {numbers[3]}");
-
 
         //USING FOR LOOP
         // for (int i = 0; i < numbers.Length; i++)
@@ -90,8 +87,6 @@ class Program
         //     Console.Write("Enter a number: ");
         //     numbers[i] = Convert.ToInt32(Console.ReadLine());
         // }
-
-
 
         // for (int i = 0; i < numbers.Length; i++)
         // {
@@ -117,7 +112,6 @@ class Program
         }
 
         int angleSum = 0;
-
 
         foreach (int angle in angles)
         {
@@ -148,13 +142,9 @@ class Program
         //     Console.WriteLine("Invalid");
         // }
 
-
         //USING A SIGNLE LINE TO ALSO SOLVE THE SAME PROBLEM FOR CLEARER CODE 
         Console.WriteLine(angleSum == 180 ? "Valid" : "Invalid");
 
-
-
         Console.ReadLine();
-
     }
 }
