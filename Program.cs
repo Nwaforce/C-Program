@@ -13,15 +13,34 @@ class Program
         // int age = 30;
         // System.Console.WriteLine($"My name is {name} and i'm {age} years old");
 
-        // //This for PasswordChecker and Validation 
-        // Console.Write("Enter Password: ");
-        // string Password = Console.ReadLine()!;
+        //This for PasswordChecker and Validation 
+        Console.Write("Enter Password: ");
+        string Password = Console.ReadLine()!;
 
-        // Console.Write("Confirm Password: ");
-        // string ConfirmPassword = Console.ReadLine()!;
+        Console.Write("Confirm Password: ");
+        string ConfirmPassword = Console.ReadLine()!;
+        int maxLength = 6;
+        // Console.WriteLine(Password);
+        // Console.WriteLine(ConfirmPassword);
 
-        // // Console.WriteLine(Password);
-        // // Console.WriteLine(ConfirmPassword);
+        if (!Password.Equals(string.Empty) && !ConfirmPassword.Equals(string.Empty))
+        {
+             if (Password.Length >= maxLength && ConfirmPassword.Length >= maxLength)
+             
+            if (Password.Equals(ConfirmPassword))
+                {
+                    Console.WriteLine("Password Match");
+                }
+                else
+                {
+                    Console.WriteLine("Password Do not Match");
+                }
+
+            else
+            {
+                Console.WriteLine("Please Enter Atleast 6 Charaters");
+            }
+        }
 
         // if (!Password.Equals(string.Empty))
         // {
@@ -141,17 +160,17 @@ class Program
         //     Console.WriteLine("Invalid");
         // }
         //ANOTHER WAY TO SOLVE AND NOT STORING THE VALUES WE INPUT IS
-        const int angleCount = 3;
-        int angleSum = 0;
+        // const int angleCount = 3;
+        // int angleSum = 0;
 
-        for (int i = 0; i < angleCount; i++)
-        {
-            Console.Write($"Enter angel {i + 1}: ");
-            angleSum += Convert.ToInt32(Console.ReadLine());
-        }
+        // for (int i = 0; i < angleCount; i++)
+        // {
+        //     Console.Write($"Enter angel {i + 1}: ");
+        //     angleSum += Convert.ToInt32(Console.ReadLine());
+        // }
 
-        //USING A SIGNLE LINE TO ALSO SOLVE THE SAME PROBLEM FOR CLEARER CODE 
-        Console.WriteLine(angleSum == 180 ? "Valid" : "Invalid");
+        // //USING A SIGNLE LINE TO ALSO SOLVE THE SAME PROBLEM FOR CLEARER CODE 
+        // Console.WriteLine(angleSum == 180 ? "Valid" : "Invalid");
 
         Console.ReadLine();
     }
