@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="WelcomeBanner" xml:space="preserve"><value>Welcome to MannyBank ATM</value></data>
+  <data name="PromptInsertCard" xml:space="preserve"><value>Insert card (enter card number)</value></data>
+  <data name="EnterCardNumber" xml:space="preserve"><value>Card number</value></data>
+  <data name="EnterPin" xml:space="preserve"><value>PIN</value></data>
+  <data name="AuthFailed" xml:space="preserve"><value>Authentication failed. Try again.</value></data>
+  <data name="AuthSuccess" xml:space="preserve"><value>Authenticated. Welcome!</value></data>
+  <data name="MainMenuTitle" xml:space="preserve"><value>Main Menu</value></data>
+  <data name="MenuBalance" xml:space="preserve"><value>Check Balance</value></data>
+  <data name="MenuDeposit" xml:space="preserve"><value>Deposit</value></data>
+  <data name="MenuWithdraw" xml:space="preserve"><value>Withdraw</value></data>
+  <data name="MenuTransfer" xml:space="preserve"><value>Transfer</value></data>
+  <data name="MenuHistory" xml:space="preserve"><value>Transaction History</value></data>
+  <data name="MenuChangeLang" xml:space="preserve"><value>Change Language</value></data>
+  <data name="MenuExit" xml:space="preserve"><value>Eject Card / Exit</value></data>
+  <data name="PromptChoice" xml:space="preserve"><value>Choose an option</value></data>
+  <data name="CurrentBalance" xml:space="preserve"><value>Current balance</value></data>
+  <data name="EnterAmount" xml:space="preserve"><value>Enter amount</value></data>
+  <data name="DepositSuccess" xml:space="preserve"><value>Deposit successful.</value></data>
+  <data name="InvalidAmount" xml:space="preserve"><value>Invalid amount.</value></data>
+  <data name="WithdrawSuccess" xml:space="preserve"><value>Withdrawal successful.</value></data>
+  <data name="InsufficientFunds" xml:space="preserve"><value>Insufficient funds.</value></data>
+  <data name="EnterTargetCard" xml:space="preserve"><value>Enter target card number</value></data>
+  <data name="TransferSuccess" xml:space="preserve"><value>Transfer successful.</value></data>
+  <data name="TransferFailed" xml:space="preserve"><value>Transfer failed (check funds and target card).</value></data>
+  <data name="NoHistory" xml:space="preserve"><value>No transactions yet.</value></data>
+  <data name="HistoryHeader" xml:space="preserve"><value>Recent transactions:</value></data>
+  <data name="LanguageChanged" xml:space="preserve"><value>Language changed.</value></data>
+  <data name="Goodbye" xml:space="preserve"><value>Goodbye!</value></data>
+  <data name="InvalidChoice" xml:space="preserve"><value>Invalid choice. Please try again.</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>Unexpected error</value></data>
+</root>

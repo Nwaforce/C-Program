@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="WelcomeBanner" xml:space="preserve"><value>Bienvenue au distributeur MannyBank</value></data>
+  <data name="PromptInsertCard" xml:space="preserve"><value>Insérez la carte (entrez le numéro de carte)</value></data>
+  <data name="EnterCardNumber" xml:space="preserve"><value>Numéro de carte</value></data>
+  <data name="EnterPin" xml:space="preserve"><value>Code PIN</value></data>
+  <data name="AuthFailed" xml:space="preserve"><value>Échec de l'authentification. Réessayez.</value></data>
+  <data name="AuthSuccess" xml:space="preserve"><value>Authentifié. Bienvenue !</value></data>
+  <data name="MainMenuTitle" xml:space="preserve"><value>Menu principal</value></data>
+  <data name="MenuBalance" xml:space="preserve"><value>Consulter le solde</value></data>
+  <data name="MenuDeposit" xml:space="preserve"><value>Dépôt</value></data>
+  <data name="MenuWithdraw" xml:space="preserve"><value>Retrait</value></data>
+  <data name="MenuTransfer" xml:space="preserve"><value>Virement</value></data>
+  <data name="MenuHistory" xml:space="preserve"><value>Historique des transactions</value></data>
+  <data name="MenuChangeLang" xml:space="preserve"><value>Changer de langue</value></data>
+  <data name="MenuExit" xml:space="preserve"><value>Éjecter la carte / Quitter</value></data>
+  <data name="PromptChoice" xml:space="preserve"><value>Choisissez une option</value></data>
+  <data name="CurrentBalance" xml:space="preserve"><value>Solde actuel</value></data>
+  <data name="EnterAmount" xml:space="preserve"><value>Entrez le montant</value></data>
+  <data name="DepositSuccess" xml:space="preserve"><value>Dépôt réussi.</value></data>
+  <data name="InvalidAmount" xml:space="preserve"><value>Montant invalide.</value></data>
+  <data name="WithdrawSuccess" xml:space="preserve"><value>Retrait réussi.</value></data>
+  <data name="InsufficientFunds" xml:space="preserve"><value>Fonds insuffisants.</value></data>
+  <data name="EnterTargetCard" xml:space="preserve"><value>Entrez le numéro de carte destinataire</value></data>
+  <data name="TransferSuccess" xml:space="preserve"><value>Virement réussi.</value></data>
+  <data name="TransferFailed" xml:space="preserve"><value>Échec du virement (vérifiez les fonds et la carte cible).</value></data>
+  <data name="NoHistory" xml:space="preserve"><value>Aucune transaction pour le moment.</value></data>
+  <data name="HistoryHeader" xml:space="preserve"><value>Transactions récentes :</value></data>
+  <data name="LanguageChanged" xml:space="preserve"><value>Langue modifiée.</value></data>
+  <data name="Goodbye" xml:space="preserve"><value>Au revoir !</value></data>
+  <data name="InvalidChoice" xml:space="preserve"><value>Choix invalide. Veuillez réessayer.</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>Erreur inattendue</value></data>
+</root>

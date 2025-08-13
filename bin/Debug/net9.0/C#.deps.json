@@ -9,6 +9,14 @@
       "C#/1.0.0": {
         "runtime": {
           "C#.dll": {}
+        },
+        "resources": {
+          "fr/C#.resources.dll": {
+            "locale": "fr"
+          },
+          "es/C#.resources.dll": {
+            "locale": "es"
+          }
         }
       }
     }

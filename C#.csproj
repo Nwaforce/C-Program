@@ -6,6 +6,11 @@
     <RootNamespace>C_</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
   </PropertyGroup>
-
+ <ItemGroup>
+    <EmbeddedResource Include="Resources/Strings.resx" />
+    <EmbeddedResource Include="Resources/Strings.fr.resx" />
+    <EmbeddedResource Include="Resources/Strings.es.resx" />
+  </ItemGroup>
 </Project>
