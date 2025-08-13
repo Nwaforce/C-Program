@@ -25,9 +25,9 @@ class Program
 
         if (!Password.Equals(string.Empty) && !ConfirmPassword.Equals(string.Empty))
         {
-             if (Password.Length >= maxLength && ConfirmPassword.Length >= maxLength)
-             
-            if (Password.Equals(ConfirmPassword))
+            if (Password.Length >= maxLength && ConfirmPassword.Length >= maxLength)
+
+                if (Password.Equals(ConfirmPassword))
                 {
                     Console.WriteLine("Password Match");
                 }
