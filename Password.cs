@@ -13,11 +13,13 @@ class PasswordValidator
 
         while (attempt < maxAttempts)
         {
+            Console.WriteLine();
             Console.Write("Enter Password: ");
             string password = Console.ReadLine()!;
 
             Console.Write("Confirm Password: ");
             string confirmPassword = Console.ReadLine()!;
+            Console.WriteLine();
 
             if (!string.IsNullOrEmpty(password) && !string.IsNullOrEmpty(confirmPassword))
             {
@@ -47,7 +49,7 @@ class PasswordValidator
             attempt++;
             if (attempt < maxAttempts)
             {
-                Console.WriteLine($"You have {maxAttempts - attempt} attempts left.\n");
+                Console.WriteLine($"You have {maxAttempts - attempt} attempts left.");
             }
         }
 
@@ -55,6 +57,6 @@ class PasswordValidator
         {
             Console.WriteLine("Too many failed attempts. Program exiting.");
         }
-        Console.ReadLine();
+         Console.ReadLine();
     }
 }
