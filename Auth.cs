@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace AuthSystem
 {
-    // Enum for menu choices
     enum MenuOption
     {
         Register = 1,
@@ -11,7 +10,6 @@ namespace AuthSystem
         Exit = 3
     }
 
-    // User model
     class User
     {
         public string Name { get; set; }
@@ -113,24 +111,38 @@ namespace AuthSystem
             Console.Clear();
             Console.WriteLine("=== Login ===");
 
-            Console.Write("Enter Email: ");
-            string email = Console.ReadLine() ?? "";
+            int attempts = 0;
 
-            Console.Write("Enter Password: ");
-            string password = Console.ReadLine() ?? "";
-
-            foreach (var user in users)
+            while (attempts < 3)
             {
-                if (user.Email.Equals(email, StringComparison.OrdinalIgnoreCase) && user.Password == password)
+                Console.Write("Enter Email: ");
+                string email = Console.ReadLine() ?? "";
+
+                Console.Write("Enter Password: ");
+                string password = Console.ReadLine() ?? "";
+
+                foreach (var user in users)
                 {
-                    Console.WriteLine($"Welcome back, {user.Name}! Press any key to continue...");
-                    Console.ReadKey();
-                    return;
+                    if (user.Email.Equals(email, StringComparison.OrdinalIgnoreCase) && user.Password == password)
+                    {
+                        Console.WriteLine($"Welcome back, {user.Name}! Press any key to continue...");
+                        Console.ReadKey();
+                        return;
+                    }
                 }
+
+                attempts++;
+                Console.WriteLine($"Invalid email or password. Attempts left: {3 - attempts}");
+
+                if (attempts < 3)
+                    Console.WriteLine("Please try again...");
             }
 
-            Console.WriteLine("Invalid email or password. Press any key to try again...");
+            // After 3 failed attempts
+            Console.WriteLine("Invalid login details.");
+            Console.WriteLine("Redirecting to registration...");
             Console.ReadKey();
+            Register();
         }
     }
 }
