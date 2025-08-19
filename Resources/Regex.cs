@@ -45,7 +45,7 @@ class Program
                 }
                 else
                 {
-                    Console.WriteLine("Please try again.\n");
+                    Console.WriteLine("Please try again.");
                 }
             }
         }
