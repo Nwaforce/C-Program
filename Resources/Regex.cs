@@ -6,7 +6,9 @@ class Program
     static void Main()
     {
         int maxAttempts = 5;
-        
+        while (true) {
+            bool isRegistered = false;
+       
 
         for (int attempt = 1; attempt <= maxAttempts; attempt++)
         {
@@ -28,7 +30,8 @@ class Program
             if (isNameValid && isEmailValid && isPasswordValid)
             {
                 Console.WriteLine("Registration successful!");
-
+                isRegistered = true;
+                break;
             }
     
             else
@@ -51,8 +54,29 @@ class Program
                 }
             }
         }
+    if (isRegistered)
+    {
+        Console.WriteLine("Welcome!");
+        Console.WriteLine("1. Register another user");
+        Console.WriteLine("2. Exit");
+        string choice = Console.ReadLine();
+        if (choice == "2")
+        {
+            Console.WriteLine("Goodbye!");
+            return; 
+        }
+        else if (choice == "1")
+        {
+            continue; 
+        }
+        else
+        {
+            Console.WriteLine("Invalid choice. Exiting.");
+            return; 
     }
-
+    }
+        }
+    }
     static bool ValidateName(string name)
     {
         return !string.IsNullOrWhiteSpace(name) && name.Length >= 3;
