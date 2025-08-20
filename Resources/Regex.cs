@@ -58,7 +58,6 @@ class Program
 
     static bool ValidateEmail(string email)
     {
-        // Simple email pattern (not 100% perfect but good for beginners)
         string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
         return Regex.IsMatch(email, pattern);
     }
