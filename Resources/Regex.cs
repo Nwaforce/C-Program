@@ -27,17 +27,17 @@ class Program
             if (isNameValid && isEmailValid && isPasswordValid)
             {
                 Console.WriteLine("Registration successful!");
-                break;
+                // break;
             }
             else
             {
                 Console.WriteLine("Registration failed due to the following errors:");
                 if (!isNameValid)
-                    Console.WriteLine("- Name must be at least 3 characters long.");
+                    Console.WriteLine("Name must be at least 3 characters long.");
                 if (!isEmailValid)
-                    Console.WriteLine("- Email format is invalid.");
+                    Console.WriteLine("Email format is invalid.");
                 if (!isPasswordValid)
-                    Console.WriteLine("- Password must be at least 6 characters long.");
+                    Console.WriteLine("Password must be at least 6 characters long.");
                 
                 if (attempt == maxAttempts)
                 {
