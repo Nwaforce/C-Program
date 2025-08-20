@@ -6,6 +6,7 @@ class Program
     static void Main()
     {
         int maxAttempts = 5;
+        
 
         for (int attempt = 1; attempt <= maxAttempts; attempt++)
         {
@@ -27,8 +28,9 @@ class Program
             if (isNameValid && isEmailValid && isPasswordValid)
             {
                 Console.WriteLine("Registration successful!");
-                // break;
+
             }
+    
             else
             {
                 Console.WriteLine("Registration failed due to the following errors:");
