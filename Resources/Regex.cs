@@ -29,6 +29,7 @@ class Program
 
             if (isNameValid && isEmailValid && isPasswordValid)
             {
+                Console.WriteLine();
                 Console.WriteLine("Registration successful!");
                 isRegistered = true;
                 break;
@@ -51,9 +52,11 @@ class Program
                 else
                 {
                     Console.WriteLine("Please try again.");
+                    
                 }
             }
         }
+        Console.WriteLine();
     if (isRegistered)
     {
         Console.WriteLine("Welcome!");
@@ -68,10 +71,11 @@ class Program
         else if (choice == "1")
         {
             continue; 
+            
         }
         else
         {
-            Console.WriteLine("Invalid choice. Exiting.");
+            Console.WriteLine("Exiting.");
             return; 
     }
     }
