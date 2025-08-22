@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-class ATM
+class MultilingualATM
 {
     static void Main()
     {
@@ -45,9 +45,9 @@ class ATM
         Console.WriteLine("Choose language");
         Console.WriteLine("1. English\n2. Français\n3. Español");
         string choice = Console.ReadLine();
-        string lang = choice == "2" ? "French" : choice == "3" ? "Spanish" : "English";
+        string language = choice == "2" ? "French" : choice == "3" ? "Spanish" : "English";
 
-        var msg = messages[lang];
+        var msg = messages[language];
         Console.WriteLine(msg["welcome"]);
 
         // string correctPin = "1234";
@@ -60,7 +60,7 @@ class ATM
         //     return;
         // }
 
-        double balance = 1000; 
+        double balance = 0;
 
         while (true)
         {
