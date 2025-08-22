@@ -4,6 +4,13 @@ using System.Collections.Generic;
 namespace MultilingualATM
 {
     
+
+     public enum Language
+    {
+        English = 1,
+        French = 2,
+        Spanish = 3
+    }
     public enum TransactionType
     {
         CheckBalance = 1,
@@ -14,12 +21,7 @@ namespace MultilingualATM
     }
 
    
-    public enum Language
-    {
-        English = 1,
-        French = 2,
-        Spanish = 3
-    }
+   
 
     public class BankAccount
     {
