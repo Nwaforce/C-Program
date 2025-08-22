@@ -13,7 +13,7 @@ namespace MultilingualATM
         Exit = 5
     }
 
-    // ENUM for language choice
+   
     public enum Language
     {
         English = 1,
@@ -214,7 +214,7 @@ namespace MultilingualATM
         {
             if (translations[currentLanguage].ContainsKey(key))
                 return translations[currentLanguage][key];
-            return key; // fallback
+            return key; 
         }
 
         static void ShowMenu()
@@ -228,7 +228,7 @@ namespace MultilingualATM
                 T("goodbye")
             };
 
-            Console.WriteLine("\n=== ATM MENU ===");
+            Console.WriteLine(" ATM MENU ");
             for (int i = 0; i < menuOptions.Length; i++)
             {
                 Console.WriteLine($"{i + 1}. {menuOptions[i]}");
