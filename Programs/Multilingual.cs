@@ -44,7 +44,7 @@ class MultilingualATM
 
         Console.WriteLine("Choose language");
         Console.WriteLine("1. English\n2. Français\n3. Español");
-        string choice = Console.ReadLine();
+        string choice = Console.ReadLine() ?? "";
         string language = choice == "2" ? "French" : choice == "3" ? "Spanish" : "English";
 
         var msg = messages[language];
@@ -65,7 +65,7 @@ class MultilingualATM
         while (true)
         {
             Console.Write(msg["menu"]);
-            string option = Console.ReadLine();
+            string option = Console.ReadLine() ?? "";
 
             if (option == "1")
             {
@@ -74,13 +74,13 @@ class MultilingualATM
             else if (option == "2")
             {
                 Console.Write(msg["deposit"]);
-                double deposit = Convert.ToDouble(Console.ReadLine());
+                double deposit = Convert.ToInt32(Console.ReadLine());
                 balance += deposit;
             }
             else if (option == "3")
             {
                 Console.Write(msg["withdraw"]);
-                double withdraw = Convert.ToDouble(Console.ReadLine());
+                double withdraw = Convert.ToInt32(Console.ReadLine());
                 if (withdraw > balance)
                 {
                     Console.WriteLine(msg["insufficient"]);
@@ -90,6 +90,7 @@ class MultilingualATM
                     balance -= withdraw;
                 }
             }
+            
             else if (option == "4")
             {
                 Console.WriteLine(msg["exit"]);
