@@ -90,7 +90,7 @@ class MultilingualATM
                     balance -= withdraw;
                 }
             }
-            
+
             else if (option == "4")
             {
                 Console.WriteLine(msg["exit"]);
