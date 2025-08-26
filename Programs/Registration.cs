@@ -15,13 +15,13 @@ public class Registration
             {
                 Console.WriteLine($"Attempt {attempt} of {maxAttempts}");
                 Console.Write("Enter your name: ");
-                string name = Console.ReadLine();
+                string name = Console.ReadLine()!;
 
                 Console.Write("Enter your email: ");
-                string email = Console.ReadLine();
+                string email = Console.ReadLine()!;
 
                 Console.Write("Enter your password: ");
-                string password = Console.ReadLine();
+                string password = Console.ReadLine()!;
 
                 bool isNameValid = ValidateName(name);
                 bool isEmailValid = ValidateEmail(email);
@@ -53,7 +53,7 @@ public class Registration
                 Console.WriteLine("\nWelcome!");
                 Console.WriteLine("1. Register another user");
                 Console.WriteLine("2. Continue to ATM");
-                string choice = Console.ReadLine();
+                string choice = Console.ReadLine()!;
 
                 if (choice == "2")
                     return true;

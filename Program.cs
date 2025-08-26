@@ -200,7 +200,7 @@ class Program
             {
             Console.WriteLine("\nChoose language:");
             Console.WriteLine("1. English\n2. French\n3. Spanish");
-            string choice = Console.ReadLine();
+            string choice = Console.ReadLine()!;
             string language = choice switch
             {
                 "2" => "French",
