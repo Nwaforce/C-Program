@@ -178,3 +178,33 @@
 //         Console.ReadLine();
 //     }
 // }
+
+
+
+
+
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Instance of Registration
+        Registration reg = new Registration();
+        bool registered = reg.Start();
+
+        if (registered)
+        {
+            Console.WriteLine("\nChoose language:");
+            Console.WriteLine("1. English\n2. French");
+            string choice = Console.ReadLine();
+            string language = choice == "2" ? "French" : "English";
+
+            // Instance of ATM
+            ATM atm = new ATM();
+            atm.Start(language);
+        }
+    }
+}
