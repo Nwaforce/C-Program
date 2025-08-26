@@ -29,6 +29,16 @@ public class Multilingual
                 {"exit", "Merci d'avoir utilisé le distributeur automatique!"},
                 {"invalid", "Option invalide. Réessayez."},
                 {"insufficient", "Fonds insuffisants !"}
+            }},
+              {"Spanish", new Dictionary<string, string>() {
+                {"welcome", "Bienvenido al cajero automático"},
+                {"menu", "\n1. Consultar saldo\n2. Depositar\n3. Retirar\n4. Salir\nElija una opción: "},
+                {"balance", "Su saldo es: "},
+                {"deposit", "Ingrese el monto del depósito: "},
+                {"withdraw", "Ingrese el monto del retiro: "},
+                {"exit", "¡Gracias por usar el cajero automático!"},
+                {"invalid", "Opción inválida. Inténtalo de nuevo."},
+                {"insufficient", "¡Fondos insuficientes!"}
             }}
         };
     }
