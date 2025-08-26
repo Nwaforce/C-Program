@@ -69,7 +69,7 @@ public class Registration
     }
 
     private bool ValidateName(string name) =>
-        !string.IsNullOrWhiteSpace(name) && name.Length >= 3;
+        !string.IsNullOrWhiteSpace(name) && name.Length >= 4;
 
     private bool ValidateEmail(string email)
     {
@@ -78,5 +78,5 @@ public class Registration
     }
 
     private bool ValidatePassword(string password) =>
-        !string.IsNullOrEmpty(password) && password.Length >= 6;
+        !string.IsNullOrEmpty(password) && password.Length >= 4;
 }
