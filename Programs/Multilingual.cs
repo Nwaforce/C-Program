@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-public class MultilingualATM
+public class Multilingual
 {
     private double balance = 0;
     private Dictionary<string, Dictionary<string, string>> messages;

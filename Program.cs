@@ -202,8 +202,8 @@ class Program
             string choice = Console.ReadLine();
             string language = choice == "2" ? "French" : "English";
 
-            
-            ATM atm = new ATM();
+
+            Multilingual atm = new Multilingual();
             atm.Start(language);
         }
     }
