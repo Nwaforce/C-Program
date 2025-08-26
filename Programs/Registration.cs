@@ -1,20 +1,19 @@
 using System;
 using System.Text.RegularExpressions;
 
-class 
+public class Registration
 {
-    static void Main()
+    private int maxAttempts = 5;
+
+    public bool Start()
     {
-        int maxAttempts = 5;
         while (true)
         {
             bool isRegistered = false;
 
-
             for (int attempt = 1; attempt <= maxAttempts; attempt++)
             {
                 Console.WriteLine($"Attempt {attempt} of {maxAttempts}");
-                Console.WriteLine();
                 Console.Write("Enter your name: ");
                 string name = Console.ReadLine();
 
@@ -30,71 +29,54 @@ class
 
                 if (isNameValid && isEmailValid && isPasswordValid)
                 {
-                    Console.WriteLine();
-                    Console.WriteLine("Registration successful!");
+                    Console.WriteLine("\nRegistration successful!");
                     isRegistered = true;
                     break;
                 }
-
                 else
                 {
-                    Console.WriteLine("Registration failed due to the following errors:");
-                    if (!isNameValid)
-                        Console.WriteLine("Name must be at least 3 characters long.");
-                    if (!isEmailValid)
-                        Console.WriteLine("Email format is invalid.");
-                    if (!isPasswordValid)
-                        Console.WriteLine("Password must be at least 6 characters long.");
+                    Console.WriteLine("\nRegistration failed:");
+                    if (!isNameValid) Console.WriteLine(" - Name must be at least 3 characters long.");
+                    if (!isEmailValid) Console.WriteLine(" - Email format is invalid.");
+                    if (!isPasswordValid) Console.WriteLine(" - Password must be at least 6 characters long.");
 
                     if (attempt == maxAttempts)
                     {
                         Console.WriteLine("Too many failed attempts. Exiting.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Please try again.");
-
+                        return false;
                     }
                 }
             }
-            Console.WriteLine();
+
             if (isRegistered)
             {
-                Console.WriteLine("Welcome!");
+                Console.WriteLine("\nWelcome!");
                 Console.WriteLine("1. Register another user");
-                Console.WriteLine("2. Exit");
+                Console.WriteLine("2. Continue to ATM");
                 string choice = Console.ReadLine();
-                if (choice == "2")
-                {
-                    Console.WriteLine("Goodbye!");
-                    return;
-                }
-                else if (choice == "1")
-                {
-                    continue;
 
-                }
+                if (choice == "2")
+                    return true;
+                else if (choice == "1")
+                    continue;
                 else
                 {
-                    Console.WriteLine("Exiting.");
-                    return;
+                    Console.WriteLine("Exiting...");
+                    return false;
                 }
             }
         }
     }
-   public static bool ValidateName(string name)
-    {
-        return !string.IsNullOrWhiteSpace(name) && name.Length >= 3;
-    }
 
-   public static bool ValidateEmail(string email)
+    private bool ValidateName(string name) =>
+        !string.IsNullOrWhiteSpace(name) && name.Length >= 3;
+
+    private bool ValidateEmail(string email)
     {
         string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
         return Regex.IsMatch(email, pattern);
     }
 
-   public static bool ValidatePassword(string password)
-    {
-        return !string.IsNullOrEmpty(password) && password.Length >= 6;
-    }
+    private bool ValidatePassword(string password) =>
+        !string.IsNullOrEmpty(password) && password.Length >= 6;
 }
