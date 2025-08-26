@@ -191,7 +191,7 @@ class Program
 {
     static void Main()
     {
-        // Instance of Registration
+    
         Registration reg = new Registration();
         bool registered = reg.Start();
 
@@ -202,7 +202,7 @@ class Program
             string choice = Console.ReadLine();
             string language = choice == "2" ? "French" : "English";
 
-            // Instance of ATM
+            
             ATM atm = new ATM();
             atm.Start(language);
         }
