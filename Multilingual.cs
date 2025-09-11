@@ -6,7 +6,7 @@ public class Multilingual
     private double balance = 0;
     private Dictionary<string, Dictionary<string, string>> messages;
 
-    public Multilingual()   
+    public Multilingual()
     {
         messages = new Dictionary<string, Dictionary<string, string>>()
         {
@@ -55,7 +55,8 @@ public class Multilingual
 
             if (option == "1")
             {
-Console.WriteLine($"{msg["balance"]} ${balance}");            }
+                Console.WriteLine($"{msg["balance"]} ${balance}");
+            }
             else if (option == "2")
             {
                 Console.Write(msg["deposit"]);
@@ -86,4 +87,4 @@ Console.WriteLine($"{msg["balance"]} ${balance}");            }
             }
         }
     }
-} 
+}
