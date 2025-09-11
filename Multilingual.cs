@@ -55,8 +55,7 @@ public class Multilingual
 
             if (option == "1")
             {
-                Console.WriteLine(msg["balance"] + balance);
-            }
+Console.WriteLine($"{msg["balance"]} ${balance}");            }
             else if (option == "2")
             {
                 Console.Write(msg["deposit"]);
