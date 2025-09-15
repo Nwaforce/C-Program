@@ -41,3 +41,5 @@ class Program
             Multilingual atm = new Multilingual();
             atm.Start(language);
         }
+    }
+}
