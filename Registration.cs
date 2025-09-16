@@ -49,7 +49,7 @@ public class Registration
             }
 
            if (isRegistered)
-{
+ {
     Console.WriteLine("\nWelcome!");
     int invalidChoiceAttempts = 0;
     const int maxInvalidChoiceAttempts = 3;
@@ -91,3 +91,4 @@ public class Registration
     private bool ValidatePassword(string password) =>
         !string.IsNullOrEmpty(password) && password.Length >= 4;
 }
+ 
