@@ -48,7 +48,7 @@ public class Multilingual
         var msg = messages.ContainsKey(language) ? messages[language] : messages["English"];
         Console.WriteLine(msg["welcome"]);
 
-        
+
 
         while (true)
         {

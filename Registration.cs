@@ -48,36 +48,36 @@ public class Registration
                 }
             }
 
-           if (isRegistered)
- {
-    Console.WriteLine("\nWelcome!");
-    int invalidChoiceAttempts = 0;
-    const int maxInvalidChoiceAttempts = 3;
-
-    while (invalidChoiceAttempts < maxInvalidChoiceAttempts)
-    {
-        Console.WriteLine("1. Register another user");
-        Console.WriteLine("2. Continue to ATM");
-        string choice = Console.ReadLine()!;
-
-        if (choice == "2")
-            return true;
-        else if (choice == "1")
-            break; 
-        else
-        {
-            invalidChoiceAttempts++;
-            Console.WriteLine($"Invalid choice. Please enter 1 or 2. ({invalidChoiceAttempts}/{maxInvalidChoiceAttempts})");
-            if (invalidChoiceAttempts == maxInvalidChoiceAttempts)
+            if (isRegistered)
             {
-                Console.WriteLine("Too many invalid choices. Exiting.");
-                return isRegistered;
+                Console.WriteLine("\nWelcome!");
+                int invalidChoiceAttempts = 0;
+                const int maxInvalidChoiceAttempts = 3;
+
+                while (invalidChoiceAttempts < maxInvalidChoiceAttempts)
+                {
+                    Console.WriteLine("1. Register another user");
+                    Console.WriteLine("2. Continue to ATM");
+                    string choice = Console.ReadLine()!;
+
+                    if (choice == "2")
+                        return true;
+                    else if (choice == "1")
+                        break;
+                    else
+                    {
+                        invalidChoiceAttempts++;
+                        Console.WriteLine($"Invalid choice. Please enter 1 or 2. ({invalidChoiceAttempts}/{maxInvalidChoiceAttempts})");
+                        if (invalidChoiceAttempts == maxInvalidChoiceAttempts)
+                        {
+                            Console.WriteLine("Too many invalid choices. Exiting.");
+                            return isRegistered;
+                        }
+                    }
+                }
             }
         }
     }
-}
-        }
-    }   
 
     private bool ValidateName(string name) =>
         !string.IsNullOrWhiteSpace(name) && name.Length >= 4;
@@ -91,4 +91,6 @@ public class Registration
     private bool ValidatePassword(string password) =>
         !string.IsNullOrEmpty(password) && password.Length >= 4;
 }
- 
+
+
+
