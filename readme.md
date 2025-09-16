@@ -10,7 +10,6 @@ This C# console application simulates a simple ATM system with two main features
 2. **Multilingual ATM**:
    After registration, users select their preferred language (English, French, or Spanish). The ATM interface—including menus and messages—will be displayed in the chosen language. Users can check their balance, deposit, withdraw, or exit. All prompts and feedback are localized.
 
----
 
 ## Features
 
@@ -38,7 +37,6 @@ This C# console application simulates a simple ATM system with two main features
   * Invalid language selection
   * Invalid ATM menu choices
 
----
 
 ## How to Run
 
