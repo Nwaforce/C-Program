@@ -18,7 +18,7 @@ class Program
             {
                 Console.WriteLine("\nChoose language:");
                 Console.WriteLine("1. English\n2. French\n3. Spanish");
-                Console.Write("Enter option (1-3): ");
+                // Console.Write("Enter option (1-3): ");
                 string choice = Console.ReadLine() ?? "";
 
                 if (choice == "1" || choice == "2" || choice == "3")
