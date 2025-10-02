@@ -7,7 +7,6 @@ class PomodoroTimer
     {
         Console.WriteLine("=== Pomodoro Timer ===");
 
-        // Ask user for custom times
         Console.Write("Enter work time in minutes: ");
         int workMinutes = int.Parse(Console.ReadLine()!);
 
