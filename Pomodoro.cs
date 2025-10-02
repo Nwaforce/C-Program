@@ -28,7 +28,6 @@ class PomodoroTimer
 
             pomodoroCount++;
 
-            // Break logic
             if (pomodoroCount % pomodorosBeforeLongBreak == 0)
             {
                 Console.WriteLine($"\nTime for a long break! ({longBreakMinutes} minutes)");
