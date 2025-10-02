@@ -9,16 +9,16 @@ class PomodoroTimer
 
         // Ask user for custom times
         Console.Write("Enter work time in minutes: ");
-        int workMinutes = int.Parse(Console.ReadLine());
+        int workMinutes = int.Parse(Console.ReadLine()!);
 
         Console.Write("Enter short break time in minutes: ");
-        int shortBreakMinutes = int.Parse(Console.ReadLine());
+        int shortBreakMinutes = int.Parse(Console.ReadLine()!);
 
         Console.Write("Enter long break time in minutes: ");
-        int longBreakMinutes = int.Parse(Console.ReadLine());
+        int longBreakMinutes = int.Parse(Console.ReadLine()!);
 
         Console.Write("How many Pomodoros before a long break? ");
-        int pomodorosBeforeLongBreak = int.Parse(Console.ReadLine());
+        int pomodorosBeforeLongBreak = int.Parse(Console.ReadLine()!);
 
         int pomodoroCount = 0;
 
