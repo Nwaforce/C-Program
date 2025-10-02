@@ -24,7 +24,6 @@ class PomodoroTimer
 
         while (true)
         {
-            // Work session
             Console.WriteLine($"\nPomodoro {pomodoroCount + 1}: Work for {workMinutes} minutes!");
             RunTimer(workMinutes);
 
